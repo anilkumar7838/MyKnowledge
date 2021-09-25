@@ -1,0 +1,71 @@
+                                    
+/*class using run time polymorphism
+        by Anil kumar
+        course Bsc.(H) computer science
+        Roll no.-19HCS4068 */
+
+#include<iostream>
+#include<string.h>
+using namespace std;
+class person
+{
+	public:
+		char name[100];
+		person()
+		{
+			strcpy(name,"PRAVEEN KUMAR");
+		}
+		virtual  void display()
+		{
+			cout<<" NAME : "<<name<<endl;
+		}
+};
+class student: public person
+{
+	public:
+		char course[100];
+		int marks,year;
+		student()
+		{
+			strcpy(course,"B.Sc.computer science");
+			marks=93;
+			year=2019;
+		}
+
+		void display()
+		{
+			cout<<" COURSE : "<<course<<endl;
+			cout<<" MARKS : "<<marks<<endl;
+			cout<<" YEAR :"<<year<<endl;
+		}
+};
+class employee:public person
+{
+	public:
+		char department[100];
+		int salary;
+		employee()
+		{
+			strcpy(department,"computer science");
+			salary=100000 ;
+		}
+	
+		void display()
+		{
+			cout<<" DEPARTMENT : "<<department<<endl;
+			cout<<" SALARY  :  "<<salary<<endl;
+		}
+};
+int main()
+{
+	person p1;
+	//calling base class
+	p1.display();
+	person *sp=new student;
+	//calling derived classes by using pointer 
+	sp->display();
+	person *ep=new employee;
+	ep->display();
+	return 0;
+}
+

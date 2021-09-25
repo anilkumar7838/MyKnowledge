@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 1800px;
+        }
+        
+        .box {
+            border: 2px solid rgb(107, 98, 98);
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: 5px;
+            padding: 2px;
+        }
+        
+        #box1 {
+            background-color: rgb(238, 95, 95);
+        }
+        
+        #box2 {
+            background-color: rgb(74, 233, 74);
+            /* relative:it is leave a gap and move relative to its original position */
+            /* absolute:it does not leave a gap and move relative to its parental position here it is body otherwise it can be a class of container */
+            /* position: fixed; */
+            position: sticky;
+            top: 10px;
+            /* left: 52px; */
+        }
+        
+        #box3 {
+            background-color: rgb(247, 247, 84);
+        }
+        
+        #box4 {
+            background-color: rgb(94, 94, 207);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

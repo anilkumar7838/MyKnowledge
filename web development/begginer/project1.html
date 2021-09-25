@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first gym website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* font-family: cursive; */
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/mygym.jpg');
+            background-size: 100%;
+            height: 830px;
+        }
+        
+        .h {
+            border: 2px solid white;
+        }
+        
+        #h1 {
+            border: none;
+            position: fixed;
+            left: 20px;
+            display: inline-block;
+            top: 16px;
+            width: 100px;
+        }
+        
+        #h1 img {
+            width: 80px;
+            height: 75px;
+            margin: 5px;
+        }
+        
+        #h1 img:hover {
+            filter: invert(100%);
+        }
+        /* .tag:hover {
+            color: hotpink
+        } */
+        
+        .tag {
+            position: fixed;
+            left: 13px;
+            display: inline-block;
+            top: 16px;
+            width: 104px;
+            margin: 83px 0px;
+            padding: 3px 28px;
+            color: aliceblue;
+        }
+        
+        #h2 {
+            background-color: rgb(212, 196, 181);
+            display: block;
+            width: 42%;
+            margin: 25px 400px;
+            border-radius: 70px;
+            padding: 0px;
+            position: fixed;
+        }
+        
+        #h3 {
+            border: none;
+            top: 25px;
+            position: fixed;
+            right: 25px;
+            width: 156px;
+            margin: 10px 15px;
+            padding: 4px;
+        }
+        
+        #h4 {
+            position: fixed;
+            left: 130px;
+            display: inline-block;
+            top: 130px;
+            width: 500px;
+            height: 450px;
+            border-radius: 20px;
+        }
+        
+        #h4-1 {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            left: 47px;
+            display: inline-block;
+            top: 20px;
+            border-radius: 50px;
+            /* background: blanchedalmond; */
+        }
+        
+        #h4-1 h3:hover {
+            color: rgb(121, 230, 117);
+        }
+        
+        .navbar ul {
+            overflow: auto;
+        }
+        
+        .navbar li {
+            display: inline-block;
+        }
+        
+        .navbar li a {
+            color: rgb(98, 98, 245);
+            font-size: 20px;
+            margin: 18px;
+            text-decoration: none;
+        }
+        
+        .navbar li a:active {
+            color: black;
+        }
+        
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+        
+        .btn {
+            font-size: 16px;
+            margin: 2px;
+        }
+        
+        .btn:active {
+            color: rgb(228, 200, 200);
+        }
+        
+        .btn:hover {
+            text-decoration: underline;
+        }
+        
+        #h4-1 h3 {
+            font-size: 30px;
+            color: rgb(135, 236, 236);
+            margin: 6px 0px;
+            padding: 2px;
+        }
+        
+        .form {
+            margin: 90px;
+            padding: 0px;
+        }
+        
+        .formgroup {
+            margin: 7px;
+            padding: 8px;
+        }
+        
+        .formgroup input {
+            font-size: 22px;
+            width: 307px;
+            padding: 7px 40px;
+            background: whitesmoke
+        }
+        
+        .formgroup input:hover {
+            filter: invert(100%);
+        }
+        
+        .btnb button {
+            font-size: 25px;
+            width: 310px;
+            height: 41px;
+            margin: 14px;
+        }
+        
+        .radiobtn {
+            font-size: 28px;
+            margin: 0px -38px;
+            padding: 2px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Download image from pixabay  -->
+    <header>
+        <!-- this is left -->
+        <div class="h">
+            <div id="h1">
+                <img src="img/gymlogo.jpg">
+            </div>
+            <div class="tag">
+                ANIL's GYM
+            </div>
+        </div>
+        <!-- this is mid -->
+        <div id="h2" class="h">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">FittnessCalculator</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+        </div>
+        <!-- this is right -->
+        <div id="h3" class="h">
+            <button class="btn">CallUs</button>
+            <button class="btn">SignUp</button>
+        </div>
+    </header>
+    <div id="h4" class="h">
+        <div id="h4-1" class="h">
+            <h3>
+                Join the best gym in Delhi Now!!!
+            </h3>
+        </div>
+        <form class="form">
+            <div class="formgroup">
+                <input type="text" placeholder="Enter Your Name"><br>
+
+            </div>
+            <div class="formgroup">
+                <input type="password" placeholder="Enter Your Password"><br>
+
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Enter Your Locality"><br>
+
+
+            </div>
+            <div class="radiobtn">
+                <input type="radio" name="gender">Male
+
+                <input type="radio" name="gender">Female
+
+                <input type="radio" name="gender">Others
+
+            </div>
+            <div class="btnb">
+                <button type="submit">Submit</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

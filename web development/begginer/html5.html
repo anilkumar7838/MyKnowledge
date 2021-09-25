@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <style>
+        .demo {
+            background-color: rgb(30, 255, 0);
+            border: 4px solid rgb(77, 77, 226);
+            border-radius: 30px;
+        }
+        
+        .demo ul {
+            overflow: auto;
+        }
+        
+        .demo li {
+            float: left;
+            list-style: none;
+        }
+        
+        .demo li a {
+            padding: 30px 18px;
+            margin: 12px 12px;
+            text-decoration: none;
+        }
+        
+        .search {
+            float: right;
+            padding: 12px 75px;
+            margin: 2px 30px;
+        }
+        
+        .demo input {
+            border: 4px solid rgb(238, 68, 102);
+            border-radius: 23px;
+            padding: 4px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="demo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Calls</a></li>
+            <div class="search">
+                <input type="text" name="search" placeholder="This is search engine">
+            </div>
+        </ul>
+    </nav>
+</body>
+
+</html>

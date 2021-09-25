@@ -1,0 +1,50 @@
+                                  
+/*this program is used to merge two sorted arrays into a sorted merged array
+        by Anil kumar
+        course Bsc.(H) computer science
+        Roll no.-19HCS4068 */
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int ar[100],tr[100],cr[100],size,i=0,j=0,new,temp;
+	cout<<"enter the size of array : ";
+	cin>>size;
+	new=2*size;
+	cout<<"enter first SORTED  array ; "<<endl;
+	for(i=0;i<size;i++)
+	{
+	   cin>>ar[i];
+	}
+	cout<<endl;
+	cout<<"enter second SORTED  array : ";
+	cout<<endl;
+	for(i=0;i<size;i++)
+	{  
+	   cin>>tr[i];
+	}
+	cout<<endl;
+	for(j=0;j<size;j++)
+	{
+		cr[j]=ar[j];
+	}
+	for(j=0;j<size;j++)
+	{
+		cr[size+j]=tr[j];
+	}
+	for(i=0;i<new;i++)
+	{
+		for(j=i+1;j<new;j++)
+		if(cr[j]<cr[i])
+		{
+			temp=cr[i];
+			cr[i]=cr[j];
+			cr[j]=temp;
+		}
+	}
+	cout<<" sorted merged array is : ";
+	for(i=0;i<new;i++)
+	cout<<cr[i]<<" ";
+	return 0;
+}

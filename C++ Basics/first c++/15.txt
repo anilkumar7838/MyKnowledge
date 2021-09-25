@@ -1,0 +1,37 @@
+/*this program is used to find L.C.M and H.C.F
+        by Anil kumar
+        course Bsc.(H) computer science
+        Roll no.-19HCS4068 */
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cout<<"enter the numbers:";
+    cin>>a>>b;
+    int i=1;
+    float y;
+    float x;
+    while(1)
+    {
+        y=i%a;
+        x=i%b;
+        if(x==0&&y==0)
+        {
+            cout<<"L.C.M is "<<i<<endl;
+            break;
+        }
+        i++;
+    }
+    while(a!=b)
+    {
+        if(a>b)
+            a-=b;
+        else
+            b-=a;
+    }
+    cout<<"H.C.F is "<<a<<endl;
+    return 0;
+}

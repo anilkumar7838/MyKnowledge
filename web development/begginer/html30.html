@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Time and Date</title>
+</head>
+
+<body>
+    <div class="container">
+        The Recent time is : <span id="time"></span>
+    </div>
+    <script>
+        function fun() {
+            let tim = new Date();
+            time.innerHTML = tim;
+        }
+        // function greet(name) {
+        //     console.log("hello Good Morning " + name);
+        // }
+        // setTimeout(greet, 3000, "AK");
+        // let call = setTimeout(greet, 3000, "AK");
+        // clearTimeout(call);
+        setInterval(fun, 1000);
+        // let call = setInterval(fun, 1000);
+        // clearInterval(call);
+        let now = new Date(0);
+        console.log(now);
+        let dt = new Date(1000);
+        console.log(dt);
+
+        let newDate = new Date(2030, 4, 6, 3, 9, 1);
+        // let newDate = new Date(year, month ,date,hours,minutes,seconds,millisecond);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("this year is ", yr);
+        let dat = newDate.getDate();
+        console.log("this date is ", dat);
+        let month = newDate.getMonth();
+        console.log("this month is ", month);
+        let hrs = newDate.getHours();
+        console.log("this hours is ", hrs);
+        let sec = newDate.getUTCSeconds();
+        console.log("this UTCseconds is ", sec);
+
+        newDate.setDate(37); //auto correction takes place itself
+        console.log(newDate);
+
+        console.log(Date.now()); //show millisecond from starting
+    </script>
+</body>
+
+</html>

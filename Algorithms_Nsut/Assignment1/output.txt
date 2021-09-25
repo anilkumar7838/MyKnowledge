@@ -1,0 +1,200 @@
+// -------------------
+LIST:
+1.)Rohan
+2.)Mohan
+3.)Sohan
+4.)Rahul
+5.)Raju
+6.)Ram
+7.)Ranjeet
+8.)Shayam
+9.)Ajay
+10.)Titu
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+1
+Enter the ID: 1236
+Name: Sohan
+
+Do you wish to continue.y/n: y
+// -------------------
+LIST:
+1.)Rohan
+2.)Mohan
+3.)Sohan
+4.)Rahul
+5.)Raju
+6.)Ram
+7.)Ranjeet
+8.)Shayam
+9.)Ajay
+10.)Titu
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+2
+Details of Empolyee 1: Name: Rohan ID: 1234 Department: ComputerScience Salary: 1000000 Address: Xyz Contact_No: 7838197234 Email_Id: abc@gamil.com Position: SoftwareEngineer Experience: 4
+
+Do you wish to continue.y/n: y
+// -------------------
+LIST:
+1.)Rohan
+2.)Mohan
+3.)Sohan
+4.)Rahul
+5.)Raju
+6.)Ram
+7.)Ranjeet
+8.)Shayam
+9.)Ajay
+10.)Titu
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+3
+Details of Empolyee 10: Name: Titu ID: 1243 Department: BusinessManagement Salary: 1500000 Address: fkh Contact_No: 5538197234 Email_Id: jtc@gamil.com Position: Manager Experience: 4
+
+Do you wish to continue.y/n: y
+// -------------------
+LIST:
+1.)Rohan
+2.)Mohan
+3.)Sohan
+4.)Rahul
+5.)Raju
+6.)Ram
+7.)Ranjeet
+8.)Shayam
+9.)Ajay
+10.)Titu
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+4
+Delete Sucessfull
+
+Do you wish to continue.y/n: y
+// -------------------
+LIST:
+1.)Rohan
+2.)Mohan
+3.)Sohan
+4.)Rahul
+5.)Raju
+6.)Ram
+7.)Ranjeet
+8.)Shayam
+9.)Ajay
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+5
+Delete Sucessfull
+
+Do you wish to continue.y/n: y
+// -------------------
+LIST:
+1.)Mohan
+2.)Sohan
+3.)Rahul
+4.)Raju
+5.)Ram
+6.)Ranjeet
+7.)Shayam
+8.)Ajay
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+6
+Delete Sucessfull
+
+Do you wish to continue.y/n: y
+// -------------------
+LIST:
+1.)Mohan
+2.)Sohan
+3.)Raju
+4.)Ram
+5.)Ranjeet
+6.)Shayam
+7.)Ajay
+**Menu**
+1. Search for 4th person ( by ID) and print name of the employee
+2. Print data for the first employee
+3. Print data for the last employee
+4. Delete data for the employee at last position
+5. Delete data for the employee at first position
+6. Delete data for the employee at third position
+7. Insert data for a new employee at last position
+8. Insert data for a new employee at first position
+9. Insert data for a new employee at second position
+Enter your choice
+8
+Enter the Name: Golu
+Enter the ID(4-Digit): 4321
+Department: Tech
+Enter the Salary: 12318
+Enter the Address: 123-ABCVIHAR
+Enter the Contact_No: 9281841721
+Enter the Email_Id: 12jsad@fjak.com
+Enter the Position: Head
+Enter the Experience(years) 8
+
+Do you wish to continue.y/n: n
+option          N shifts
+1               0
+2               0
+3               0
+4               1
+5               9
+6               6
+8               9

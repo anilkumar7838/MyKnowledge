@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MediaQueries in Css Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside' 'footer footer footer footer';
+        }
+        
+        nav {
+            grid-area: navbar;
+        }
+        
+        section {
+            grid-area: section;
+        }
+        
+        aside {
+            grid-area: aside;
+        }
+        
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        
+        @media (max-width:300px) {
+            body {
+                background-color: yellow;
+            }
+            nav {
+                text-align: center;
+            }
+            span {
+                padding: 2px 12px;
+            }
+            .container {
+                grid-template-areas: 'navbar navbar navbar navbar' 'section section section section' 'footer footer footer footer';
+            }
+            aside {
+                display: none;
+            }
+        }
+        
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: cyan;
+            }
+            nav {
+                text-align: center;
+            }
+            span {
+                padding: 8px 12px;
+            }
+            /* .container {
+                grid-template-areas: 'navbar navbar navbar navbar' 'section section section section' 'footer footer footer footer';
+            }
+            aside {
+                display: none;
+            } */
+        }
+        
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(68, 226, 68);
+            }
+            nav {
+                text-align: center;
+            }
+        }
+        
+        @media (min-width:800px) {
+            body {
+                background-color: hotpink;
+            }
+        }
+        
+        .item {
+            border: 3px solid black;
+            padding: 12px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam laudantium ad a autem nisi, natus, harum nesciunt velit placeat porro cumque, vel dolores. Ullam dolore ex adipisci ipsum omnis tenetur provident. Cum iusto sit alias vitae, molestiae
+            dolorum veniam eius! Nulla blanditiis quae dolorem unde magni amet aliquam sapiente.
+        </section>
+        <aside class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique iure eligendi nulla.
+        </aside>
+        <footer class="item">Copyrights &copy; www.anilcodes.com</footer>
+
+    </div>
+</body>
+
+</html>

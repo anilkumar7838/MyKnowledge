@@ -1,0 +1,22 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "description": "This is Educational website project",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Coding",
+    "Camps"
+  ],
+  "author": "Anilkumar",
+  "license": "ISC"
+}

@@ -1,0 +1,49 @@
+                                    
+/*this program is used to remove duplicate from array
+        by Anil kumar
+        course Bsc.(H) computer science
+        Roll no.-19HCS4068 */
+    
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[100],size; 
+    int i, j, k;
+    cout<<"Enter size of the array : ";
+    cin>>size;
+    //Reading elements of array
+    cout<<"Enter elements in array : "<<endl;
+    for(i=0;i<size;i++)
+    {
+        cin>>arr[i];
+    }
+    // Finding all duplicate elements in array
+ 
+    for(i=0;i<size;i++)
+    {
+        for(j=i+1;j<size;j++)
+        {
+            if(arr[i]==arr[j])
+            {
+                // Delete the current duplicate element
+                for(k=j;k<size;k++)
+                {
+                    arr[k]=arr[k+1];
+                }
+                //Decrement size after removing duplicate element
+                size--;
+                j--;
+            }
+        }
+    }
+ 
+    // Print array after deleting duplicate elements
+ 
+    cout<<"Array elements after deleting duplicates : ";
+    for(i=0;i<size;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}

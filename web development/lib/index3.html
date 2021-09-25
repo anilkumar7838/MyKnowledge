@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect the shelf</title>
+    <!-- styles by bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/teach.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <img src="assets/img/logo.jpg" alt="Connect">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Donate a book</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-secondary" href="#">Student</a>
+                        <a class="dropdown-item text-secondary" href="#">Teacher</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-secondary" href="#">Admin</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mx-0 px-0 my-2 row">
+        <ul class="task nav flex-column border border-dark col-md-1 text-center mx-0 px-0">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Issue a book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Return a book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Track a student record</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Track a book record</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Issued books list</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Manage book list</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Manage student list</a>
+            </li>
+        </ul>
+
+        <div class="workarea border border-dark col-md-11 mx-0 px-0 text-center">
+            <form class="mt-2 mx-auto py-1 my-1">
+                <div class="form-row">
+                    <div class="col my-1">
+                        <button class="btn btn-success">Download list</button>
+                    </div>
+                    <div class="col my-1">
+                        <button class="btn btn-danger">Show only defaults</button>
+                    </div>
+                    <div class="col my-1">
+                        <button class="btn btn-secondary">Fetch previous records</button>
+                    </div>
+                    <div class="col my-1">
+                        <input type="text" class="form-control" placeholder="Search here">
+                    </div>
+                    <div class="col my-1">
+                        <button type="submit" class="btn btn-outline-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+            <table class="table table-hover table-responsive-sm">
+                <h1 class="h1 text-center text-primary border-top border-dark" id="title">Title</h1>
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Books issued</th>
+                        <th scope="col">Issue date</th>
+                        <th scope="col">Return date</th>
+                        <th scope="col">Status</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Thornton</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- scripts by bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>

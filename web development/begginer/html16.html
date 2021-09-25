@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>variable declaration</title>
+    <style>
+         :root {
+            --primary-color: red;
+            --secondary-color: yellow;
+            --maxw: 300px;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .box {
+            margin: 2px 9px;
+            width: var(--maxw);
+            height: 200px;
+            border: 2px solid var(--primary-color);
+            background-color: var(--secondary-color);
+            box-shadow: inset 5px 6px 10px 5px cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+
+</html>

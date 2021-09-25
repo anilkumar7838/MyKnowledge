@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Json Tutorial</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            name: "Anil",
+            Class: "3th semester",
+            Rollno: "19hcs4068",
+            Course: "bsc(h)computer science",
+        }
+        console.log(obj);
+        let jsonobjstr = JSON.stringify(obj); //convert object into string
+        console.log(jsonobjstr);
+
+        jsonobjstr = jsonobjstr.replace("3th semester", "2nd year");
+        console.log(jsonobjstr);
+
+        let newjson = JSON.parse(jsonobjstr); //convert string into object
+        console.log(newjson);
+    </script>
+</body>
+
+</html>

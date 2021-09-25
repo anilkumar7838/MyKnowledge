@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript String</title>
+</head>
+
+<body>
+    <h3>This is a heading</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum repudiandae pariatur excepturi vitae natus dolor assumenda nulla quam, officia minus suscipit dicta, voluptate molestiae, accusamus perferendis tenetur commodi architecto quis labore
+        adipisci corporis ex! Quas accusamus eligendi qui et totam temporibus dolorem accusantium possimus necessitatibus?</p>
+</body>
+<script>
+    var str = " iam ANILKUMAR";
+    var str1 = new String(" iam Awesome");
+    console.log(str);
+    console.log(str1);
+    console.log(`hello everyone${str} and${str1} `);
+    var a = str.substring(1, 7); //  from( [1,6] )
+    console.log(a);
+    var a = str.substr(1, 7); //  from( [1,7] )
+    console.log(a);
+    var a = str.slice(1, 7); //  from( [1,6] )
+    console.log(a);
+    var pos = str.indexOf('ANIL');
+    console.log(pos);
+    pos = str.lastIndexOf('ANIL');
+    console.log(pos);
+    var replaced = str.replace('KUMAR', 'THEBOSS');
+    console.log(replaced);
+    // var newstr = str.concat('new string')
+    // console.log(newstr);
+    var strWithWhitespaces = "      this   contains    whitespaces          ";
+    console.log(strWithWhitespaces);
+    console.log(strWithWhitespaces.trim());
+    var char = str.charAt(2);
+    var char1 = str.charCodeAt(2); //for charcode
+    console.log(char);
+    console.log(str[3]);
+    var b = str.toLowerCase();
+    console.log(b);
+    var c = str.toUpperCase();
+    console.log(c);
+</script>
+
+</html>

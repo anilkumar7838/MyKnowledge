@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .box {
+            margin: 2px 9px;
+            width: 300px;
+            /* height: 200px; */
+            border: 2px solid red;
+            background-color: blueviolet;
+            /* box-shadow: offsetx, offsety, bulyerradius, spreadingarea; */
+            /* box-shadow: 5px 6px cadetblue; */
+            /* box-shadow: 5px 6px 10px 5px cadetblue; */
+            box-shadow: inset 5px 6px 10px 5px cadetblue;
+        }
+        
+        .box h2 {
+            text-shadow: 3px 4px rgb(189, 180, 180);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>Heading1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis fugiat quia dolor quam provident modi blanditiis repudiandae aut neque. Hic unde animi, quod tenetur molestiae deleniti modi magni ut ipsam aperiam eos voluptatum?</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>Heading2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis fugiat quia dolor quam provident modi blanditiis repudiandae aut neque. Hic unde animi, quod tenetur molestiae deleniti modi magni ut ipsam aperiam eos voluptatum?</p>
+        </div>
+        <div class="box" id="box3">
+            <h2>Heading3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis fugiat quia dolor quam provident modi blanditiis repudiandae aut neque. Hic unde animi, quod tenetur molestiae deleniti modi magni ut ipsam aperiam eos voluptatum?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

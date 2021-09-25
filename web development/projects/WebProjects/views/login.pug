@@ -1,0 +1,22 @@
+extends base.pug
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#section3
+        div.primary
+            h1 LOG-IN
+        <div class="formgroup">
+            <form action="" method="post">
+                <input type="text" name="text" placeholder="ENTER YOUR NAME">
+                <input type="age" name="age" placeholder="ENTER YOUR AGE">
+                <input type="gender" name="gender" placeholder="ENTER YOUR GENDER">
+                <input type="email" name="email" placeholder="ENTER YOUR EMAIL">
+                <input type="password" name="password" placeholder="ENTER YOUR PASSWORD">
+                <textarea name="more" id="more" cols="30" rows="5" placeholder="MESSAGE"></textarea>
+                <button class="btn">SIGN IN</button>
+            </form>
+        </div>
+    </section>

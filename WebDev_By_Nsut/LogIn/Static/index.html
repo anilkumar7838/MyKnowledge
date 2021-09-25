@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="demo.js"></script>
+</head>
+
+<body>
+    <center class="heading">
+        <h1>Registration Form</h1>
+    </center>
+    <div class="container">
+        <form action="/sign-up" class="formgroup" method="POST">
+            <div class="tag">
+                <label for="name">FirstName:</label>
+                <input type="text" id="name" placeholder="Anil">
+            </div>
+            <div class="tag">
+                <label for="name">MiddleName:</label>
+                <input type="text" id="name" placeholder="kumar">
+            </div>
+            <div class="tag">
+                <label for="name">LastName:</label>
+                <input type="text" id="name" placeholder="singh">
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="19">
+
+            </div>
+
+            <div id="radiogroup">
+                <label for="gender">Gender:<br></label>
+                <input type="radio" name="gender" value="male" id="gender">Male
+                <input type="radio" name="gender" value="Female" id="gender">Female
+                <input type="radio" name="gender" value="transgender" id="gender">Transgender
+                <input type="radio" name="gender" value="others" id="gender">Others
+            </div>
+
+            <div class="Number">
+                <label for="number">Mobile-No. :<br></label>
+                <input type="text" name="countrycode" placeholder="code" id="countrycode" value="+91" size="2" />
+                <input type="number" name="phoneNo" placeholder="Mobile number" id="number" required/>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter Email" required/>
+                <br>
+            </div>
+
+            <div class="btn">
+                <div>
+                    <button type="submit" class="btn-primary">Submit</button>
+                </div>
+                <div>
+                    <button type="reset" class="btn-primary">Reset</button>
+                </div>
+            </div>
+            <br>
+
+        </form>
+    </div>
+</body>
+
+</html>

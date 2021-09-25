@@ -1,0 +1,39 @@
+                                    /*  PRINITING SUM OF SERIES THROUGH COMMAND LINE ARGUMENT  */
+/*this program is used to print sum of series through command line argument
+        by Anil kumar
+        course Bsc.(H) computer science
+        Roll no.-19HCS4068 */
+#include<iostream>
+#include<stdlib.h>
+#include<math.h>
+using namespace std;
+int main(int argc,char *argv[])
+{
+	int n;
+	float sum,val;
+	if(argc<2)
+	{
+		cout<<" ENTER THE VALUE OF N : ";
+		cin>>n;
+		cout<<endl;
+	}
+	else
+	{
+		cout<<" VALUE OF N : "<<argv[1]<<endl;
+		n=atoi(argv[1]);
+	}
+	for(int i=1;i<=n;i++)
+	{
+		val=1/pow(i,i);
+		if(i%2==0)
+		{
+			sum=sum-val;
+		}
+		else
+		{
+			sum=sum+val;
+		}
+	}
+	cout<<" SUM OF THE SERIES IS : "<<sum;
+	return 0;
+}

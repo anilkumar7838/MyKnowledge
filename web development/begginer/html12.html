@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+    <style>
+        /* this syntax refer the "just next statement" i.e. use css on that para which is present just inside after div  */
+        /* div>p {
+            color: white;
+            background-color: hotpink;
+            font-weight: bold;
+        }
+         */
+        /* it represent siblings i.e. para after div ends*/
+        
+        div+p {
+            color: white;
+            background-color: rgb(247, 161, 91);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>this is a paragraph</p>
+        <div>
+            <ul>
+                <li>
+                    <p>this is a paragraph inside a li abbreviation</p>
+                </li>
+                <p>this is a paragraph inside ul abbreviation</p>
+            </ul>
+            <p>this is a paragraph outside ul abbreviation</p>
+        </div>
+        <p>this is a another paragraph</p>
+    </div>
+    <p>this is paragraph outside div abbreviation</p>
+</body>
+
+</html>

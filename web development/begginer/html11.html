@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pseudo selectors</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            background-color: red;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            display: none;
+        }
+        
+        @media screen and (max-width:300px) {
+            #box4 {
+                display: block;
+                background-color: yellow;
+            }
+        }
+        
+        @media (min-width:300px) and (max-width:500px) {
+            #box3 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+        
+        @media (min-width:500px) and (max-width:800px) {
+            #box2 {
+                display: block;
+                background-color: rgb(68, 226, 68);
+            }
+        }
+        
+        @media (min-width:800px) {
+            #box1 {
+                display: block;
+                background-color: hotpink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">hello</div>
+        <div class="box" id="box2">my</div>
+        <div class="box" id="box3">dear</div>
+        <div class="box" id="box4">friend</div>
+    </div>
+</body>
+
+</html>

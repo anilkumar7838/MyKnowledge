@@ -1,0 +1,34 @@
+extends base.pug
+
+block style
+    style
+        include ../static/style.css
+
+block script
+    script(src="static/index.js")
+
+block content
+        section#section-1
+           h2 Welcome to Anil's Dance Academy
+           p Eat Sleep Dance Repeat
+
+        section#section-2
+           h2 Our Missions
+           div.container#box-1
+            h3  Dance as you like
+            img(src="/static/mission1.jpg", alt="Oops!! image is not loaded")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aut vitae quos sint delectus, culpa consequuntur harum amet a eligendi, nesciunt, blanditiis quasi optio dolore cupiditate? Eligendi nesciunt harum iure! 
+           div.container#box-2
+            h3  Your Favourite Dance 
+            img(src="/static/mission2.jpg", alt="Oops!! image is not loaded")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aut vitae quos sint delectus, culpa consequuntur harum amet a eligendi, nesciunt, blanditiis quasi optio dolore cupiditate? Eligendi nesciunt harum iure!
+           div.container#box-3
+            h3  Expert Teaching
+            img(src="/static/mission3.jpg", alt="Oops!! image is not loaded")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aut vitae quos sint delectus, culpa consequuntur harum amet a eligendi, nesciunt, blanditiis quasi optio dolore cupiditate? Eligendi nesciunt harum iure!
+        section#section-3
+           h2 Our Sponsors
+           img(src="static/logo1.png", alt="")
+           img(src="static/logo2.png", alt="")
+           img(src="static/logo3.png", alt="")
+           img(src="static/logo4.png", alt="")

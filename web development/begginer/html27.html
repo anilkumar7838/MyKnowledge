@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript "Loops"</title>
+</head>
+
+<body>
+    <h1>This is page</h1>
+    <script>
+        //forloop--
+        // let element = 4;
+        // for (i = 0; i < element; i++) {
+        //     console.log(`value is ${i}`);
+        // }
+
+        //forEach--
+        //let a = ["anil", "sohan", "rohan", "mohan"];
+        // a.forEach(function fun(x) {
+        //     console.log(x);
+        // });
+
+
+
+        //for of--
+        //let a = ["anil", "sohan", "rohan", "mohan"];
+        // for (x of a) {
+        //     console.log("Hello my dear friend " + x);
+        // }
+
+        let element = {
+            name: "Anil",
+            salary: "200000",
+            channel: "Hello World",
+            "channel 2": "Hello"
+        }
+        for (key in element) {
+            console.log(`object content key is ${key} and element is ${element[key]}`);
+        }
+    </script>
+</body>
+
+</html>

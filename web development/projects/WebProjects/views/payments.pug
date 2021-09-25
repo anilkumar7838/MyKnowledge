@@ -1,0 +1,27 @@
+extends base.pug
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    <section id="section4">
+        <div class="primary">
+            <h1>Payments</h1>
+        </div>
+        <div class="paymentgate">
+            <div class="pay">
+                <form action="" method="POST">
+                    <label for="number1">Card Number:</label>
+                    <input type="number" name="number1" placeholder="xxxx xxxx xxxx xxxx">
+                    <label for="date">Expiry Date:</label>
+                    <input type="date" name="date">
+                    <label for="number2">Cvc:</label>
+                    <input type="number" name="number2" placeholder="xxx" min="000" max="999">
+                    <label for="CardholderName">CardHolderName</label>
+                    <input type="CardholderName" name="CardholderName" placeholder="Full Name">
+                    <button class="btn">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </section>

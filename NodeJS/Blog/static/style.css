@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsl(10deg 7% 53%);
+    cursor: pointer;
+}
+
+body {
+    background-color: gray;
+    border-radius: 12px;
+}
+
+.heading h1 {
+    color: #ff9306
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    /* text-decoration: overline; */
+}
+
+.heading:hover {
+    color: hotpink;
+}
+
+.container {
+    display: flex;
+    /* align-items: center; */
+    height: 100%;
+    width: 50%;
+    border-radius: 12px;
+    background-image: repeating-radial-gradient(yellow, orange, hotpink);
+}
+
+
+/* form */
+
+.formgroup {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    margin: auto;
+    height: 100%;
+    width: 75%;
+    /* border: 3px solid pink; */
+}
+
+.formgroup label {
+    color: white;
+    font-size: 23px;
+    margin: 8px;
+}
+
+.tag {
+    text-align: center;
+    margin: 6px 0;
+}
+
+#radiogroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    height: auto;
+    font-size: 20px;
+    border-radius: 13px;
+}
+
+#gender {
+    width: 60px;
+    height: 22px;
+}
+
+#name,
+#age,
+#email {
+    /* width: 100%; */
+    /* height: 80%; */
+    border-radius: 13px;
+    border: 4px solid cyan;
+}
+
+#email {
+    width: 83%;
+}
+
+#age {
+    float: right;
+    width: 73%;
+}
+
+#name {
+    width: 73%;
+}
+
+#countrycode {
+    border: 2px solid cyan;
+    border-radius: 12px;
+    width: 65px;
+}
+
+.Number {
+    display: inline-block;
+    width: 100%
+}
+
+#number {
+    width: 55%;
+    border-radius: 13px;
+    border: 4px solid cyan;
+}
+
+input {
+    /* background-color: red; */
+    background-color: rgb(174, 236, 219);
+}
+
+input:hover,
+input:active {
+    /* background-color: red; */
+    background-color: white;
+}
+
+input[placeholder] {
+    color: black;
+    font-size: 20px;
+    padding: 0 12px;
+}
+
+#email label {
+    display: inline-block;
+}
+
+
+/* button */
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.btn-primary {
+    margin: 23px 8px;
+    font-size: 25px;
+    color: #06ff8b;
+    width: 200px;
+    height: 40px;
+    border: 2px solid cyan;
+    border-radius: 23px;
+    background-color: rgb(102, 84, 88);
+}
+
+.btn-primary:hover {
+    margin: 21px 10px;
+    width: 215px;
+    height: 42px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 18px;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}

@@ -1,0 +1,83 @@
+/*this program is used to remove duplicates from array and print duplicate and unique elements
+        by Anil kumar
+        course Bsc.(H) computer science
+        Roll no.-19HCS4068 */
+#include <iostream>
+
+using namespace std;
+void duplicate(int *a, int n)
+{
+    int i,j,k,c=0,con,b[n];
+    for(i=0;i<n;i++)
+    {
+        con=0;
+        for(j=0;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                con++;
+            }
+        }
+        if(con>1)
+        {
+            b[i]=a[i];
+            c++;
+        }
+    }
+    for(i=0;i<c;i++)
+    {
+        for(j=i+1;j<c;)
+        {
+          if(b[j]==b[i])
+          {
+              for(k=j;k<c;k++)
+              {
+                  b[k]=b[k+1];
+              }
+              c--;
+          }
+          else
+            j++;
+        }
+    }
+    for(i=0;i<c;i++)
+    {
+        cout<<"the duplicate elements are:"<<b[i]<<endl;
+    }
+}
+
+int main()
+{
+    int i,j,n,k;
+    cout<<"enter size:";
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        cout<<"enter the element "<<i+1<<":";
+        cin>>a[i];
+    }
+    duplicate(a,n);
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;)
+        {
+          if(a[j]==a[i])
+          {
+              for(k=j;k<n;k++)
+              {
+                  a[k]=a[k+1];
+              }
+              n--;
+          }
+          else
+            j++;
+        }
+    }
+    cout<<"the array with removed duplicates is"<<endl;
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<"\t";
+    }
+    return 0;
+}
