@@ -7,65 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN-Up</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 760px)" href="css/phone.css">
     <script defer src="demo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f22b6a456b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <center class="heading">
-        <h1>Registration Form</h1>
-    </center>
     <div class="container">
-        <form action="/sign-up" class="formgroup" method="POST">
-            <div class="tag">
-                <label for="name">FirstName:</label>
-                <input type="text" id="name" placeholder="Anil">
-            </div>
-            <div class="tag">
-                <label for="name">MiddleName:</label>
-                <input type="text" id="name" placeholder="kumar">
-            </div>
-            <div class="tag">
-                <label for="name">LastName:</label>
-                <input type="text" id="name" placeholder="singh">
-            </div>
-
-            <div>
-                <label for="age">Age:</label>
-                <input type="number" id="age" placeholder="19">
-
-            </div>
-
-            <div id="radiogroup">
-                <label for="gender">Gender:<br></label>
-                <input type="radio" name="gender" value="male" id="gender">Male
-                <input type="radio" name="gender" value="Female" id="gender">Female
-                <input type="radio" name="gender" value="transgender" id="gender">Transgender
-                <input type="radio" name="gender" value="others" id="gender">Others
-            </div>
-
-            <div class="Number">
-                <label for="number">Mobile-No. :<br></label>
-                <input type="text" name="countrycode" placeholder="code" id="countrycode" value="+91" size="2" />
-                <input type="number" name="phoneNo" placeholder="Mobile number" id="number" required/>
-            </div>
-            <br>
-            <div>
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Enter Email" required/>
+        <center class="heading">
+            <h1>Registration Form</h1>
+        </center>
+        <div>
+            <form action="/Signup" class="form" method="POST">
+                <div class="tag">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <span class="errorM">Name is too short!!!</span>
+                </div>
+                <div class="tag">
+                    <input type="text" id="Uname" placeholder="UserName" required>
+                    <br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <span class="errorM">UserName is invalid!!!</span>
+                </div>
                 <br>
-            </div>
-
-            <div class="btn">
-                <div>
-                    <button type="submit" class="btn-primary">Submit</button>
+                <div class="tag">
+                    <input type="text" name="email" id="email" placeholder="Email" required/>
+                    <br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <span class="errorM">Eamil is not valid!!!</span>
+                    <br>
                 </div>
-                <div>
-                    <button type="reset" class="btn-primary">Reset</button>
-                </div>
-            </div>
-            <br>
 
-        </form>
+                <div class="tag">
+                    <input type="number" name="phoneNo" placeholder="Phone Number" id="number" required/>
+                    <br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <span class="errorM">PhoneNumber should contain 10 Numbers</span>
+                </div>
+                <br>
+                <div class="tag">
+                    <input type="password" id="Password" placeholder="Password" required>
+                    <br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <span class="errorM">Password is invalid!! (useAny:'$','&','#,'@')</span>
+                </div>
+
+                <div class="tag">
+                    <input type="password" id="Cpassword" placeholder="Confirm Password" required>
+                    <br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <span class="errorM">Password does not match!!!</span>
+                </div>
+
+                <div id="radiogroup">
+                    <label id="glabel" for="gender">Gender</label>
+                    <div class="radiobtn">
+                        <input type="radio" name="gender" value="male" class="gender" checked>Male
+                        <input type="radio" name="gender" value="Female" class="gender">Female
+                        <input type="radio" name="gender" value="others" class="gender">Prefer not to say
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <div>
+                        <button type="submit" class="btn btn1" id="button">Register</button>
+                    </div>
+                </div>
+                <br>
+
+            </form>
+        </div>
     </div>
 </body>
 

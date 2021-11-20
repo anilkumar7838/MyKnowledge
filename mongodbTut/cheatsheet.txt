@@ -1,0 +1,118 @@
+---------------------------------
+Database operation
+ 
+view all databases
+> show dbs
+
+create a new or switch
+> use dbname
+
+view current database
+> db
+
+Delete database
+> db.dropDatabase()
+
+-----------------------------------
+Collection operation
+
+view collections in database
+> show collections
+
+create Collection
+> db.createCollection('myComments')
+
+Drop Collection
+> db.collection_name.drop()
+
+--------------------------------
+Rows operation
+
+insert one Row
+> db.collectionName.insert({
+    'name' : "Anil",
+    'Lang' : "JavaScript",
+    'member_since' : 5
+})
+
+insert many Rows
+> db.collectionName.insertMany([
+    {
+        'name' : "Anil",
+        'Lang' : "JavaScript",
+        'member_since' : 5
+    },
+    {
+        'name' : "Anil",
+        'Lang' : "JavaScript",
+        'member_since' : 5
+    },
+    {
+        'name' : "Anil",
+        'Lang' : "JavaScript",
+        'member_since' : 5
+    }
+ ])
+
+
+------------------------------
+Tuple/objects
+
+view dataObjects in a row
+> db.collection_name.find()
+> db.collectionName.findOne()
+> db.collection_name.find({name: "Anil"})
+> db.collection_name.find().pretty()
+> db.collection_name.find().limit(2)
+> db.collection_name.find().count()
+> db.collection_name.find().limit(2).count()
+> db.collectionName.find().sort({member_since: 1}).pretty()
+> db.collectionName.find().sort({member_since: -1}).pretty()
+
+--------------------------
+update Row
+> db.collectionName.update({name: "Anil"},{
+    name: "Anil",
+    lang: "C++"
+})
+
+upsert is create if not present on updation
+> db.collectionName.update({name: "Anil"},{
+    name: "Anil",
+    lang: "C++"
+},{upsert:true})
+
+remove
+db.collectionName.remove(name: "Anil")
+
+------------------------------------
+Mongodb operator
+
+db.collectionName.find({name:{$eq:"Anil"} })
+
+$eq ->equal
+$gt ->greater than
+$lt ->less than
+$gte ->greater than and equal
+$lte ->less than and equal
+
+$in takes multi input in array
+for find
+eg- {age: {$in: [24,25]}}
+
+$and
+$or
+
+
+increment for one
+> db.collectionName.update({name: "Anil"},{
+    $inc:{member_since: 2}
+})
+
+
+Rename for one
+> db.collectionName.update({name: "Anil"},{
+    $rename:{member_since: 'Joining Date'}
+})
+
+// Now learn how to Connect

@@ -1,0 +1,2 @@
+25
+Number of Comparsion is: 2

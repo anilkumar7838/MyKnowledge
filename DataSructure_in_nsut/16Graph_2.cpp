@@ -241,7 +241,7 @@ void topologicalSort(node* start){
         q1.pop();
         node* dummy=findNode(start,c);
         edge* temp_E=dummy->adj;
-        cout<<c<<" ";
+        // cout<<c<<" ";
         while(temp_E!=NULL){
             char ch=temp_E->dest;
             if(cal_indegree(start,ch)==1 and checkEdge(start,c,ch)){

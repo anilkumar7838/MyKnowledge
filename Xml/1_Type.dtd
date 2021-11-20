@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Structure->DTD ->Document type Defination -->
+
+<!ELEMENT aliens (alien+)>
+<!ELEMENT alien (name,salary)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ATTLIST alien aid ID #REQUIRED>
+<!-- <!ATTLIST alien lang ID #REQUIRED> -->
+<!ATTLIST alien lang (Java|C|Python) "Java">

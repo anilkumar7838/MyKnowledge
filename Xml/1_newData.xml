@@ -1,0 +1,17 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<tns:globalaliens
+xmlns:tns="http://www.my.com/1_Schema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.my.com/1_Schema 1_Schema.xsd"
+<tns:alien aid='A1' lang="Java">
+    <alien>
+        <name>Anil Kumar</name>
+        <salary>200000</salary>
+    </alien>
+<alien>
+    <alien aid='A2' lang="Python">
+        <name>Ajay Kumar</name>
+        <salary>40000</salary>
+</alien> -->
+<!-- <?xml-model href="1_Schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<!-- <xmlns:tns="http://www.example.org/1_Schema"> -->

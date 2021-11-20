@@ -29,14 +29,14 @@ function animate2() {
     form1.classList.remove('sign_after');
     form2.classList.remove('content_after');
     setTimeout(() => {
-        form1.style.right = "150px";
-        form2.style.right = "300px";
+        form1.style.right = "250px";
+        form2.style.right = "450px";
         let ele1 = document.getElementById("content-id").style.visibility = "visible";
         let ele2 = document.getElementById("sign-id").style.visibility = "visible";
         setTimeout(() => {
             ele2 = document.getElementById("sign-id").style.zIndex = "1";
         }, 1500);
-    }, 1200)
+    }, 1450)
 
 }
 
