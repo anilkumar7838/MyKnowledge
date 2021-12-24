@@ -27,7 +27,7 @@ void transitiveClosure(int &a[],int n)
     }
     printSolution(b,n);
 }
-void printSolution(int b[][],int n)
+void printSolution(int n,int b[][n])
 {
     cout<<"Following matrix is transitive closure of the given graph\n";
     for (int i = 0; i < n; i++)
@@ -57,11 +57,10 @@ int main()
     		cin>>a[i][j];
 	    }
     }
-//    int graph[4][4] = { {1, 1, 0, 1},
-//                        {0, 1, 1, 0},
-//                        {0, 0, 1, 1},
-//                        {0, 0, 0, 1}
-//                      };
-    transitiveClosure(*a,n);
-    getch();
+   int graph[4][4] = { {1, 1, 0, 1},
+                       {0, 1, 1, 0},
+                       {0, 0, 1, 1},
+                       {0, 0, 0, 1}
+                     };
+    transitiveClosure(graph,n);
 }

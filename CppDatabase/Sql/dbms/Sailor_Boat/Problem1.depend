@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1638606191 source:c:\users\anilk\documents\anilkumar\codes\cppdatabase\sql\sqllearning\problem1\main.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<mysql.h>
+
+1476096933 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\mysql.h
+	<sys/types.h>
+	<winsock.h>
+	"mysql_com.h"
+	"mysql_time.h"
+	"mysql_version.h"
+	"typelib.h"
+	"my_list.h"
+	"my_alloc.h"
+
+1476096946 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\mysql_com.h
+
+1476096972 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\mysql_time.h
+
+1476096983 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\mysql_version.h
+	<custom_conf.h>
+
+1476097123 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\typelib.h
+
+1476097168 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\my_list.h
+
+1476097177 c:\program files (x86)\dev-cpp\tdm-gcc-64\include\my_alloc.h
+
+1638616627 source:c:\users\anilk\documents\anilkumar\codes\cppdatabase\sql\sailor\main.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<mysql.h>
+
+1476096933 c:\program files\mingw\mingw32\include\mysql.h
+	<sys/types.h>
+	<winsock.h>
+	"mysql_com.h"
+	"mysql_time.h"
+	"mysql_version.h"
+	"typelib.h"
+	"my_list.h"
+	"my_alloc.h"
+
+1476096946 c:\program files\mingw\mingw32\include\mysql_com.h
+
+1476096972 c:\program files\mingw\mingw32\include\mysql_time.h
+
+1476096983 c:\program files\mingw\mingw32\include\mysql_version.h
+	<custom_conf.h>
+
+1476097123 c:\program files\mingw\mingw32\include\typelib.h
+
+1476097168 c:\program files\mingw\mingw32\include\my_list.h
+
+1476097177 c:\program files\mingw\mingw32\include\my_alloc.h
+
+1638640259 source:c:\users\anilk\documents\anilkumar\codes\cppdatabase\sql\sailor_boat\main.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<mysql.h>
+

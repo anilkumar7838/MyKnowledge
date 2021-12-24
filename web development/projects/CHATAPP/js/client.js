@@ -15,14 +15,17 @@ const append = (message, position) => {
     //     audio.play();
     // }
 };
+
 //Ask new user for his/her name and let the server know
 const name = prompt("Enter Your name to join");
-socket.emit("new-user-joined", name);
+socket.emit("new-user-joined");
+
 //If a new user joins, receive his/her name from the server 
 socket.on("user-joined", name => {
     // console.log(`${name} joined the chat`);
     append(`${name} joined the chat`, "left");
 });
+
 //If server sends a message,receive it
 // socket.on("receive", data => {
 //     append(`${data.name}:${data.message}`, "right")

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1638812800 source:c:\users\anilk\documents\anilkumar\codes\cppdatabase\sql\project\librarymanagement\main.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<mysql.h>
+
