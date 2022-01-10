@@ -5,7 +5,7 @@ using namespace std;
 
 template<typename T>
 class Graph{
-    map<T,list<T> > adjList;
+    map<T,list<T>> adjList;
 public:
     Graph(){
     }

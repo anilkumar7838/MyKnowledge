@@ -280,5 +280,62 @@ localStorage.setItem("Name", "Anil");
 // ---------------------------------
 
 // backticks
-x = 34;
-console.log(`value of x is ${x}`);
+// x = 34;
+// console.log(`value of x is ${x}`);
+
+// -------------RegularExpression----------
+
+//regex
+// let reg=/Anil/;
+// reg=/Anil/g; // g for globle check in string or regularExpression
+// reg=/Anil/i; // i for case insensitivity
+// console.log(reg);
+// console.log(reg.source);
+
+// let s="hello my friend ANil iam Anil kumar";
+// 1.exec()-This function will return an array for match or null for no match
+
+// let result=reg.exec(s);
+// console.log(result); //index1
+// result=reg.exec(s);
+// console.log(result); //index2
+// result=reg.exec(s);
+// console.log(result); //null
+
+// if(result){
+    //     console.log(result.input);
+    //     console.log(result.index);
+    // }
+    // 2.test() - Returns true or false
+    // result =reg.test(s);
+    // console.log(result); --> This will only print true if the "reg" is there in the string "s"
+    
+    // 3. match() --> It will return an array of results or null
+    // result=reg.match(a) //wrong
+    // It return array for globle regex
+    // result=s.match(reg) //right
+    // console.log(result);
+    
+    // 4.search() - Returns index of first match else -1
+    // result =s.search(reg/);
+    // console.log(result)
+    
+    // 5. replace()-- Returns new replaced string with all the replacements
+    
+    // result= s.replace(reg,'Ajay');
+    // console.log(result);
+    
+    //----------MetaCharacter-----------
+    let reg=/Anil/;
+    let s="hello my friend ANil iam Anil kumar";
+    //s="hello my friend ANil iam Ai kumar"; // for ?
+    
+    // reg=/^he/ //^ expression match is start with "An"
+    // reg=/ar$/ //$ expression match is end with "ar"
+    // reg=/An.l/ // . expression matches any exactlyone character
+    reg=/A*i/ // . expression matches any 0 or more character between A and i
+    reg=/An?il?/ // ? after character means character optional
+    reg=/A\*il/ // \ expression for use of standard character i.e when u search "Ani*l" by using backlash it ignore its original nature and parse as it is.
+    result=reg.exec(s);
+    console.log(result);
+    console.log(s);

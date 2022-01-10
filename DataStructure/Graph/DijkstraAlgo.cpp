@@ -21,12 +21,13 @@ int main(){
     int src;
     cin>>src;
     dist[src]=0;
-    set<pair<int ,int>> s;
+    set<pair<int,int>> s;
     s.insert({0,src});
 
     while(!s.empty()){
         auto x=*(s.begin());
         s.erase(x);
+        cout<<x.first<<"*";
         for(auto it: graph[x.second]){
             // cout<<"*"<<it.second<<endl;   
             if(dist[it.first]>dist[x.second]+it.second){
@@ -36,6 +37,7 @@ int main(){
             }
         }
     }
+    
     for(int i=1;i<=n;i++){
         if(dist[i]<inf){
             cout<<dist[i]<<" "; 
