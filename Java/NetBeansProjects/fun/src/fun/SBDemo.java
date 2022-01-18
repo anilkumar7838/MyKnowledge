@@ -27,7 +27,7 @@ public class SBDemo extends Applet implements AdjustmentListener,MouseMotionList
     addMouseMotionListener(this);
     }
     public void adjustmentValueChanged(AdjustmentEvent e){
-    repaint();
+        repaint();
     }
     public void mouseDragged(MouseEvent e){
     int x=e.getX();

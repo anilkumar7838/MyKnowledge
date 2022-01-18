@@ -1,10 +1,9 @@
 
-
 const sendToken=(user,statusCode,res)=>{
 
     const token =user.getJWTToken();
 
-    //options for ccokie
+    //options for cookie
     const options = {
         expire: new Date(Date.now + process.env.COOKIE_EXPIRE *24 *60*60*1000),
         httpOnly:true,
@@ -18,6 +17,5 @@ const sendToken=(user,statusCode,res)=>{
     })
 
 }
-
 
 module.exports = sendToken

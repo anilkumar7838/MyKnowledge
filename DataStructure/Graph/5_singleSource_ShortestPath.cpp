@@ -33,7 +33,7 @@ class Graph{
         dist[src]=0;
         // int parent=src;
         while(!q.empty()){
-            T node =q.front();
+            T node = q.front();
             q.pop();
 
             for(auto p:adj[node]){

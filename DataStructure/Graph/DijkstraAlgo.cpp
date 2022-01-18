@@ -27,7 +27,7 @@ int main(){
     while(!s.empty()){
         auto x=*(s.begin());
         s.erase(x);
-        cout<<x.first<<"*";
+        // cout<<x.first<<"*";
         for(auto it: graph[x.second]){
             // cout<<"*"<<it.second<<endl;   
             if(dist[it.first]>dist[x.second]+it.second){

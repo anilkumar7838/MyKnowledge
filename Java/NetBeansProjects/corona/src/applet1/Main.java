@@ -20,6 +20,6 @@ public class Main {
   obj.add(gameplay);
           
   obj.setBounds(10, 10, 700, 600);
-  obj.setTitle("my first game");
+  obj.setTitle("Block breaker");
     }
 }
