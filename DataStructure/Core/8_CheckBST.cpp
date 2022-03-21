@@ -59,8 +59,8 @@ int main(){
     builtBST(root,8);
     inorderPrint(root1);
     cout<<endl;
-    cout<<"Check BST: "<<checkBST(root1,INT_MAX,INT_MIN)<<endl;
+    cout<<"Check BST: "<<checkBST(root1,INT32_MAX,INT32_MIN)<<endl;
     inorderPrint(root);
     cout<<endl;
-    cout<<"Check BST: "<<checkBST(root,INT_MAX,INT_MIN)<<endl;
+    cout<<"Check BST: "<<checkBST(root,INT32_MAX,INT32_MIN)<<endl;
 }

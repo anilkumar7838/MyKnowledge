@@ -22,7 +22,7 @@ int highBT(node* root){
     return high;
 }
 int diameter(node* root){      //O(N^2)
-    static int lh=0,rh=0;
+    // static int lh=0,rh=0;
     if(root==NULL){
         return 0;
     }

@@ -38,6 +38,6 @@ void printPreorder(node* root){
 int main(){
     int preorder[]={10,2,1,13,11};
     int n=5,idx=0;
-    node* root=builtBST(preorder,n,idx,preorder[0],INT_MAX,INT_MIN);
+    node* root=builtBST(preorder,n,idx,preorder[0],INT32_MAX,INT32_MIN);
     printPreorder(root);
 }

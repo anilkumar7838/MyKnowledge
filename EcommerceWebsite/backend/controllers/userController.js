@@ -197,7 +197,7 @@ exports.getAllUsers = catchAsyncErrors(async(req,res,next)=>{
 exports.getSingleUser = catchAsyncErrors(async(req,res,next)=>{
     const user = await User.findById(req.params.id);
     if(!user){
-        return next(new ErrorHandler(`User does not exist with Id: ${req.params.id}`));
+        return next(new ErrorHandler(`User does not exist with Id: ${req.params.id}`),400);
     }
     res.status(200).json({
         success:true,
@@ -229,7 +229,7 @@ exports.deleteUser = catchAsyncErrors(async(req,res,next)=>{
     // we will remove Cloudinary later
 
     if(!user){
-        return next(new ErrorHandler(`User does not exist with Id: ${req.params.id}`));
+        return next(new ErrorHandler(`User does not exist with Id: ${req.params.id}`,400));
     }
 
     await user.remove();
@@ -237,5 +237,5 @@ exports.deleteUser = catchAsyncErrors(async(req,res,next)=>{
     res.status(200).json({
         succes:true,
         message:"User Deleted Successfully",
-    })
+    }); 
 });

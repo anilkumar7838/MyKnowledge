@@ -22,7 +22,12 @@ int editTxt(string str1,string str2){
             q1=dp[i-1][j-1]; //replacement
             q2=dp[i][j-1]; //insertion
             q3=dp[i-1][j]; //deletion
-            dp[i][j]=min(q1,min(q2,q3))+ (str1[i-1]!=str2[j-1]);
+            if((str1[i-1]==str2[j-1])){
+                dp[i][j]=dp[i-1][j-1];
+            }
+            else{
+                dp[i][j]=min(q1,min(q2,q3))+1;
+            }
         }
     }
     
@@ -39,7 +44,10 @@ int editTxt(string str1,string str2){
 }
 
 int main(){
-    string str1="sunday",str2="saturday";
+    // string str1="sunday",str2="saturday";
+    string str1="zoologicoarchaeologist";
+    string str2="zoogeologist";
+    // string str1="",str2="a";
     // cin>>str1;
     // cin>>str2;
     cout<<editTxt(str1,str2)<<endl;

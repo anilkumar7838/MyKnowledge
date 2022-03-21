@@ -13,7 +13,7 @@ class Apifeatures{
         }:{};
         
         this.query=this.query.find({...keyword});
-        return this
+        return this;
     }
     
     // JavaScript objects are Passed by reference

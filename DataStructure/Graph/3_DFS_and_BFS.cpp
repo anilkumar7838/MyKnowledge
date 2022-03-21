@@ -77,7 +77,7 @@ int main(){
     // g.PrintAdj();
     // cout<<endl;
 
-    // g.dfsPrint("1");
-    g.bfsPrint("1");
+    g.dfsPrint("1");
+    // g.bfsPrint("1");
 
 }

@@ -7,7 +7,7 @@ string fun(vector<string> strs){
         for(int i=1;i<strs.size();i++){
             ans="";
             int j=0;
-            cout<<j<<" "<<prev<<endl;
+            // cout<<j<<" "<<prev<<endl;
             string curr=strs[i];
             while(curr[j]!='\0' && prev[j]!='\0'){
                 if(prev[j]==curr[j]){
