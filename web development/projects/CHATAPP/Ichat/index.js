@@ -1,5 +1,10 @@
 //Nodeserver which will handle socket io connections
-const io = require("socket.io")(8000)
+const cors = require('cors');
+const io = require('socket.io')(8000, {
+    cors: {
+      origin: '*',
+    }
+  });
 
 const users = {};
 
@@ -16,7 +21,7 @@ io.on("connection", socket => {
     });
     //If someone leaves the chat,let others know
     socket.on("disconnect", message => {
-        socket.broadcast.emit("left", users[socket.id]);
+        socket.broadcast.emit("leave", users[socket.id]);
         delete users[socket.id];
     })
 })

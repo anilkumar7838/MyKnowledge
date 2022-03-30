@@ -113,6 +113,8 @@
                 localStorage.setItem('itemJson', JSON.stringify(itemJsonArray))
             }
             update();
+            document.getElementById('title').value="";
+            document.getElementById('description').value="";
         }
 
         function update() {

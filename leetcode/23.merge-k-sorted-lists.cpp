@@ -46,18 +46,11 @@ public:
         return l3->next;
     }
     
-//     void print(ListNode* l){
-//         while(l!=NULL){
-//             cout<<l->val<<" ";
-//             l=l->next;
-//         }
-//     }
-    
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         int n=lists.size();
         ListNode* ans;
         if(n==0){
-            return ans;
+            return NULL;
         }
         else if(n==1){
             return lists[0];

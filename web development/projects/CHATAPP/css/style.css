@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(107, 15, 107));
+    background-image: linear-gradient(rgb(245, 148, 148), rgb(166, 78, 224));
 }
 
 .logo {
@@ -48,7 +48,7 @@ h1 {
 }
 
 #send-container {
-    display: block;
+    /* display: block; */
     margin: auto;
     text-align: center;
     max-width: 1085px;
