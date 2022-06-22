@@ -32,8 +32,8 @@ int min_maxDistance(int arr[],int n,int k){
 }
 
 int main(){
-    // int arr[]={1,2,5,7,8,11,12};
-    int arr[]={1,2,8,4,9};
+    int arr[]={1,2,5,7,8,11,12};
+    // int arr[]={1,2,8,4,9};
     int n=7;  // size
     int k=3;  // pair
     cout<<min_maxDistance(arr,n,k)<<endl;

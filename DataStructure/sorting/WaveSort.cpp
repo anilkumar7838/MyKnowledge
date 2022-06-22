@@ -20,7 +20,7 @@ void WaveSort(int arr[],int n){
 }
 
 int main(){
-int arr[]={1,3,4,7,5,6,2};
+int arr[]={1,2,2,2,5,6,7};
 WaveSort(arr,7);
 for(int i=0;i<7;i++){
     cout<<arr[i]<<" ";

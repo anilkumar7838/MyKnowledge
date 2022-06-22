@@ -116,3 +116,9 @@ Rename for one
 })
 
 // Now learn how to Connect
+//-------------- Delete ----------
+1. Find avg of all the subjects
+2. Update marks of student2
+3. Update database by adding one student details.
+
+db.student.aggregate({$group:{"_id":"_id",AverageValue:{$avg:"$marks" }}}])
